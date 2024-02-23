@@ -4,6 +4,14 @@ This is a simple login form implemented in PHP.
 
 # Templates
 
-This form utilizes the 'Simple login form' template created by R Thapa.
-If you are using this template, please visit 'https://tailwindflex.com/@r-thapa/simple-login-form-2'.
-Thank u R Thapa😌
+This form utilizes the following templates:  
+  
+- 'Simple login form' created by R Thapa
+- 'Hero Section' created by Manon Daniel
+  
+If you choose to use these templates, please access:  
+
+- Simple Login Form[https://tailwindflex.com/@r-thapa/simple-login-form-2]
+- Hero Section[https://tailwindflex.com/@manon-daniel/hero-section]
+  
+Thank you very much.
