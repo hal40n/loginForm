@@ -16,7 +16,7 @@
           <form action="confirm.php" method="POST">
             <div class="max-w-md mx-auto">
               <div>
-                <h1 class="text-2xl font-semibold">Login</h1>
+                <h1 class="text-2xl font-semibold">Welcome Back</h1>
               </div>
               <div class="divide-y divide-gray-200">
                 <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">

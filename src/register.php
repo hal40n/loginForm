@@ -28,7 +28,7 @@
           <form action="login.php" method="POST">
             <div class="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
               <div class="mt-3 rounded-lg sm:mt-0">
-                <button type="submit" name="logout" value="logout" class="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Login</button>
+              <a href="login.php" class="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Login</a>
               </div>
             </div>
           </form>
