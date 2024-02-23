@@ -29,7 +29,7 @@
                     <label for="password" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Password</label>
                   </div>
                   <div class="relative">
-                    <button type="submit" value="login" class="bg-cyan-500 text-white rounded-md px-2 py-1">Submit</button>
+                    <button type="submit" name="login" value="login" class="bg-cyan-500 text-white rounded-md px-2 py-1">Login</button>
                   </div>
                 </div>
               </div>
