@@ -1,11 +1,34 @@
 <?php
   session_start();
+  require_once('config.php');
 
   // defined variables
   $name = $_POST['name'];
-  $password = $_POST['password'];
+  $email = $_POST['email'];
+  $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-  if(isset($name) && isset($password))
+  $host = $dbConfig['host'];
+  $dbname = $dbConfig['dbname'];
+  $user = $dbConfig['user'];
+  $password = $dbConfig['password'];
+  try {
+    $pdo = new PDO("mysql:host={$host};dbname={$dbname}", $user, $dbPass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  } catch(PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+  }
+
+  $stmt = $pdo->prepare("SELECT COUNT(*) as count FROM users WHERE email = :email");
+  $stmt->bindParam(':email', $email);
+  $stmt->execute();
+  $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+  if($result['count'] !== 0)
+  {
+    $_SESSION['error'] = "The entered email address is already registered.";
+    header('Location: signup.php');
+    exit();
+  }
 ?>
 
 <!DOCTYPE html>
